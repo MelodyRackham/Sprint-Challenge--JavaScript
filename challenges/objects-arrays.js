@@ -99,9 +99,7 @@ The resulting contact information strings should have a space between the first 
 Log the result of your new array. */
 
 const contactInfo = [];
-graduates.forEach(function(contact) {
-  return contactInfo.push(`${contact.first_name} ${contact.email}`);
-});
+graduates.forEach(contact => contactInfo.push(`${contact.first_name} ${contact.email}`));
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. 
@@ -143,9 +141,7 @@ Populate the displayNames array with only the animal_name and scientific_name of
 displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 */
 const displayNames = [];
-zooAnimals.forEach(function(animals) {
-  return displayNames.push(`${animals.animal_name} ${animals.scientific_name}`);
-});
+zooAnimals.forEach(animals => displayNames.push(`${animals.animal_name} ${animals.scientific_name}`));
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -153,9 +149,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 */
 
 const lowCaseAnimalNames = [];
-zooAnimals.map(function(animals) {
-  return lowCaseAnimalNames.push(`${animals.animal_name.toLowerCase()}`);
-});
+zooAnimals.map(animals => lowCaseAnimalNames.push(`${animals.animal_name.toLowerCase()}`));
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter()
